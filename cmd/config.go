@@ -9,7 +9,7 @@ import (
 )
 
 func configureConfig(cmd *cobra.Command) {
-	cmd.Flags().StringArrayP("config", "", nil, "Path of the config file.")
+	cmd.Flags().StringArrayP("config", "", []string{"config.yaml"}, "Path of the config file.")
 }
 
 func initializeConfig(cmd *cobra.Command) error {
